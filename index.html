@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Stickman Combat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background"></div>
+
+    <div id="ui-layer">
+        <div class="health-boards">
+            <div class="player-ui">
+                <h2>YOU (Lv. <span id="level-display">1</span>)</h2>
+                <div class="hp-container">
+                    <div id="player-hp" class="hp-fill player-hp"></div>
+                </div>
+            </div>
+
+            <div class="enemy-ui">
+                <h2 id="enemy-name">OPPONENT</h2>
+                <div class="hp-container">
+                    <div id="enemy-hp" class="hp-fill enemy-hp"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="text-wrapper">
+            <div id="text-display"></div>
+        </div>
+    </div>
+
+    <div id="arena">
+        <video id="combat-video" src="Stickmann.mp4" loop preload="auto"></video>
+    </div>
+
+    <div id="stats-screen" class="hidden">
+        <h1 id="end-message">LEVEL CLEARED!</h1>
+        <div class="stats-grid">
+            <p>Time: <span id="stat-time">0</span>s</p>
+            <p>Speed: <span id="stat-wpm">0</span> WPM</p>
+            <p>Accuracy: <span id="stat-acc">0</span>%</p>
+        </div>
+        <button id="next-btn" onclick="nextLevel()">PRESS 'ENTER' TO CONTINUE</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
