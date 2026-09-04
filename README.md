@@ -1,7 +1,5 @@
 # The Slashing Words ⚔️
 
-**[Play the Live Demo Here]** <!-- Add your GitHub Pages URL here -->
-
 **The Slashing Words** is a browser-based, interactive typing combat game built entirely with Vanilla JavaScript, HTML5, and CSS3. It merges classic typing-test mechanics with rhythm-based combat visuals, where a background video and combat animations react dynamically in real-time to the user's typing speed and accuracy.
 
 ## 🚀 Features
